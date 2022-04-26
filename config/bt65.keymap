@@ -30,20 +30,20 @@
 		};
 		raise {
 			bindings = <
-				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug PSCRN //15
+				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &kp PSCRN //15
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &reset &kp HOME //15
 				&trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp C_MUTE
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans
 				&trans &trans  &trans              &trans                            &trans   &trans   &kp TILDE &kp C_PREV &trans &kp C_NEXT
 			>;
-			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+			sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>; 
 		};
 		layer_2 {
 			bindings = <
 				&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PAGE_UP
-				&trans &trans &kp UP &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK &reset &rgb_ug RGB_HUI
-		//		"&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&kp PAGE_DOWN",
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PAGE_DOWN
 				&trans    &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_UP   &bootloader &rgb_ug RGB_HUD
+		//		rans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&kp PAGE_DOWN",
 				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
 				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &trans &bl BL_DEC
 			>;
