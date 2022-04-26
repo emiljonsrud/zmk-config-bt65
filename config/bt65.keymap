@@ -46,7 +46,7 @@
 				&trans &bl BL_TOG &bl BL_DEC &bl BL_INC &rgb_ug RGB_TOG &rgb_ug RGB_BRD &rgb_ug RGB_BRI &trans &trans &trans &trans  &trans &bt BT_SEL 0 &trans
  				&trans &trans  &trans              &trans                            &trans   &trans   &kp TILDE &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
 		};
 	};
 };
