@@ -36,7 +36,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans
 				&trans &trans  &trans              &trans                            &trans   &trans   &kp TILDE &kp C_PREV &trans &kp C_NEXT
 			>;
-			sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>; 
+			sensor-bindings = <&inc_dec_kp UP DOWN>; 
 		};
 		layer_2 {
 			bindings = <
