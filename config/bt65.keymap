@@ -60,15 +60,15 @@
                 , <&macro_tap &kp NON_US_BSLH>
                 , <&macro_release &kp LSHFT>
                 ;
-		}
+		};
     };
 
 	combos {
         compatible = "zmk,combos";
         combo_less_than {
             timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp NON_US_BSLH>;
+            key-positions = <1 0>;
+            bindings = <&kp NON_US_BSLH>; 
         };
     };
 	
