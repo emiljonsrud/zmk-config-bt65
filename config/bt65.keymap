@@ -17,7 +17,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp 7>
+                , <&macro_tap &kp N7>
                 , <&macro_release &kp RALT>
                 ;
         };
@@ -27,11 +27,12 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp 0>
+                , <&macro_tap &kp N0>
                 , <&macro_release &kp RALT>
                 ;
         };
     };
+	
 	
 	keymap {
 		compatible = "zmk,keymap";
@@ -59,7 +60,7 @@
 		bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &kp PSCRN //15
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &reset &kp HOME //15
-				&trans    &curly_left &curly_right &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp C_MUTE
+				&trans    &curly_left &trans &trans &curly_right &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp C_MUTE
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans
 				&trans &trans  &trans              &trans                            &trans   &trans   &kp TILDE &kp C_PREV &trans &kp C_NEXT
 			>;
