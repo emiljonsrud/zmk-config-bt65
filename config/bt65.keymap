@@ -5,27 +5,13 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-# include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/outputs.h>
 
 
 
 / {
 	keymap {
 		compatible = "zmk,keymap";
-
-		macros {
-			curly_left: curly_left {
-				label = "curly_left";
-				compatible = "zmk, behavior-macro";
-				#binding-cells = <0>;
-				bindings
-					= <&macro_press &kp LALT>
-					, <&macro_tap &kp 7>
-					, <&macro_release &kp LALT>
-					;
-			};
-		};
-
 
 		
 		default_layer {
