@@ -16,9 +16,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT>
+                = <&macro_press &kp RALT>
                 , <&macro_tap &kp 7>
-                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
                 ;
         };
         curly_right: curly_right {
@@ -26,9 +26,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT>
+                = <&macro_press &kp RALT>
                 , <&macro_tap &kp 0>
-                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
                 ;
         };
     };
