@@ -52,7 +52,7 @@
                 ;
         };
 		greater_than: greater_than {
-            label = "Square right bracket";
+            label = "Greater than";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -107,7 +107,7 @@
 				&trans    &curly_left &square_left &square_right &curly_right &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp C_MUTE
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans
 				&trans &trans  &trans              &trans                            &trans   &trans   &kp TILDE &kp C_PREV &trans &kp C_NEXT
-			>;
+			>; 
 			sensor-bindings = <&inc_dec_kp UP DOWN>; 
 		};
 		layer_2 {
