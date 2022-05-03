@@ -10,6 +10,21 @@
 	keymap {
 		compatible = "zmk,keymap";
 
+		macros {
+			curly_left: curly_left {
+				label = "curly_left";
+				compatible = "zmk, behavior-macro";
+				#binding-cells = <0>;
+				bindings
+					= <&macro_press &kp LALT>
+					, <&macro_tap &kp 7>
+					, <&macro_release &kp LALT>
+					;
+			};
+		};
+
+
+		
 		default_layer {
 				// ------------------------------------------------------------------------------------------------------------
 				// |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | INS		|
@@ -32,7 +47,7 @@
 		bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &kp PSCRN //15
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &reset &kp HOME //15
-				&trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp C_MUTE
+				&trans    &curly_left &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp C_MUTE
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans
 				&trans &trans  &trans              &trans                            &trans   &trans   &kp TILDE &kp C_PREV &trans &kp C_NEXT
 			>;
