@@ -72,11 +72,11 @@
         };
         combo_greater_than {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <33 34>;
             bindings = <&greater_than>; 
         };
     };
-	
+
 	
 	keymap {
 		compatible = "zmk,keymap";
