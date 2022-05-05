@@ -51,7 +51,7 @@
                 , <&macro_release &kp RALT>
                 ;
         };
-	greater_than: greater_than {
+		greater_than: greater_than {
             label = "Greater than";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -60,30 +60,7 @@
                 , <&macro_tap &kp NON_US_BSLH>
                 , <&macro_release &kp LSHFT>
                 ;
-	};
-	zoom_in: zoom_in {
-		label = "Zoom in";
-		compatible = "zmk, behavior-macro";
-		#binding-cells = <0>;
-		bindings
-			= <&macro_press &kp LGUI>
-			, <&macro_press &kp Q>
-			, <&macro_release &kp LGUI>
-			;
-	}; 	
-	zoom_out: zoom_out {
-		label = "Zoom out";
-		compatible = "zmk, behavior-macro";
-		#binding-cells = <0>;
-		bindings
-			= <&macro_press &kp LGUI>
-			, <&macro_press &kp A>
-			, <&macro_release &kp LGUI>
-			;
-	}; 	
-}
-    };
-}
+		};
     };
 
 	combos {
